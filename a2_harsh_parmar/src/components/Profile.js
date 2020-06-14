@@ -22,6 +22,7 @@ export default class Profile extends React.Component {
           </div>
         </form>
       </div>
+
       <div className="register-container">    
         <form className="register-form">
         <h1>Register</h1>
@@ -42,7 +43,8 @@ export default class Profile extends React.Component {
             <label for="terms">I agree to terms and conditions.</label>
             <br/> 
             <br/>
-            <button type="submit" id="submit" value="submit">Register</button>
+            <button className="primary" type="submit" id="submit" value="submit">Register</button>
+            <br/>
           </div>
         </form>
       </div>
