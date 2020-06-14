@@ -4,7 +4,7 @@
   "description": "WEB Assignment 2",
   "main": "index.js",
   "dependencies": {
-    "start": "node index.js"
+    "start": "node index.js",
     "create-react-app": "^3.4.1",
     "express": "^4.17.1"
   },
