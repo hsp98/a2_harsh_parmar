@@ -1,0 +1,20 @@
+{
+  "name": "a2_harsh_parmar",
+  "version": "1.0.0",
+  "description": "WEB Assignment 2",
+  "main": "index.js",
+  "dependencies": {
+    "create-react-app": "^3.4.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.cs.dal.ca/hparmar/a2_harsh_parmar.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
