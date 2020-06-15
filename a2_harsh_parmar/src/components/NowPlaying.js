@@ -16,8 +16,7 @@ export default function NowPlaying({ movie }) {
 
   const containerStyle = {
     textAlign: "center",
-    paddingLeft: "100px",
-    paddingTop: "10px",
+    paddingLeft: "10px",
   };
 
   return (

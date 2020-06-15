@@ -16,7 +16,7 @@ export default function UpComing({ movie }) {
 
   const containerStyle = {
     textAlign: "center",
-    padding: "100px",
+    paddingLeft: "10px",
   };
 
   return (

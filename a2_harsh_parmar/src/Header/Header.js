@@ -29,6 +29,11 @@ export default class Header extends React.Component {
                 <li className="menu-link"><Link to="/offers">Offers</Link></li>
                 <li className="menu-link"><Link to="/aboutus">About Us</Link></li>
                 <li className="menu-link"><Link to="/contactus">Contact Us</Link></li>
+                <li className="search-bar">
+                  <div className="col-sm-10">
+                    <input className="form-control" type="text" id="searchMovie" placeholder="Search Movie" onChange={() => this.handleSearchMovie()}/>
+                  </div>
+                </li>
             </ul>
         </div>
        );
@@ -50,6 +55,11 @@ export default class Header extends React.Component {
                 <li className="menu-link"><Link to="/offers">Offers</Link></li>
                 <li className="menu-link"><Link to="/aboutus">About Us</Link></li>
                 <li className="menu-link"><Link to="/contactus">Contact Us</Link></li>
+                <li className="search-bar">
+                  <div className="col-sm-10">
+                    <input className="form-control" type="text" id="searchMovie" placeholder="Search Movie" onChange={() => this.handleSearchMovie()}/>
+                  </div>
+                </li>
             </ul>
         </div>
        );

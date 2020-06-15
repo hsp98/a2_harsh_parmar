@@ -8,6 +8,7 @@ import UpComing from "./UpComing";
 import DatePicker from 'react-date-picker';
 import {Button} from 'react-bootstrap';
 import Filter from './Filter';
+import './home.css';
 
 export default class Home extends React.Component {
 	constructor(props){
@@ -36,19 +37,22 @@ async componentDidMount() {
 	  
   	}
 
-  	onChange = date => this.setState({ date })
+	  onChange = date => this.setState({ date })
+	  
+	  handleCityName(){
+
+	  }
   
   	render(){
 	  	let filterClose =() => {this.setState({filterShow:false})};
 		return (
-			<div className="App">
-				<div className="row">
+			<div className="container m-9">
+				<div className="row sm-3 ml-15">
 					<div className="col mt-4">
-						<input type="text" id="location" placeholder="Enter City Name" />
-						<button id="searchLocation">Select</button>
+						<input className="form-control" type="text" id="location" placeholder="Enter City Name" onChange={this.handleCityName}/>
 					</div>
 					<br/>
-					<div className="col mt-4">
+					<div className="col mt-4 ml-5">
 						<DatePicker
 							onChange={this.onChange}
 							value={this.state.date}
@@ -56,8 +60,8 @@ async componentDidMount() {
 					</div>
 					<br/>
 					<div className="col mt-4">
-						
 							<Button 
+							className="filter-button"
 								variant='primary'
 								onClick={()=> this.setState({filterShow:true})}
 								>
