@@ -27,7 +27,7 @@ export default function UpComing({ movie }) {
       <Slider {...settings}>
         {movie.map(function (movie) {
           return (
-            <React.Fragment>
+            <React.Fragment key={movie.id}>
               <Link to={`/movies/${movie.id}`}>
                 <Col>
                   <Card

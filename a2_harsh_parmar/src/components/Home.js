@@ -32,7 +32,6 @@ async componentDidMount() {
 		  )
 		]);
 		this.setState({nowPlaying:allMovies[0].data.results});
-		console.log(allMovies[0].data.results);
 		this.setState({upComing:allMovies[1].data.results});
 	  
   	}

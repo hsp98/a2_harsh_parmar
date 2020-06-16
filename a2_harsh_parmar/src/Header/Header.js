@@ -20,7 +20,7 @@ export default class Header extends React.Component {
             <h1 className="title">MovieTime</h1>
             <div className="profile">
               <img src={userLogo} alt="userlogo" className="userlogo"/>
-              <label class="profile-text"><Link to="/profile">Profile</Link></label>
+              <label className="profile-text"><Link to="/profile">Profile</Link></label>
             </div>
         </div>
             <ul className="ul">
@@ -46,7 +46,7 @@ export default class Header extends React.Component {
             <h1 className="title">MovieTime</h1>
             <div className="profile">
               <img src={userLogo} alt="userlogo" className="userlogo"/>
-              <label class="profile-text"><Link to="/profile">Profile</Link></label>
+              <label className="profile-text"><Link to="/profile">Profile</Link></label>
             </div>
         </div>
             <ul className="ul">

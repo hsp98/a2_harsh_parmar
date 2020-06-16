@@ -27,8 +27,8 @@ export default function NowPlaying({ movie }) {
       <Slider {...settings}>
         {movie.map(function (movie) {
           return (
-            <React.Fragment>
-              <Link to={`/movies/${movie.id}`}>
+            <React.Fragment key={movie.id}>
+              <Link to={`/movie/${movie.id}`}>
                 <Col>
                   <Card
                     style={{
