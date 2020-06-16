@@ -64,9 +64,9 @@
 
   .search-bar {
     float: right; 
-	padding: 16px;
-	padding-left: 24px; 
-	width: 25%; 
+	  padding: 16px;
+	  padding-left: 24px; 
+	  width: 25%; 
     font-size: 25px;
     text-decoration: none;
   }

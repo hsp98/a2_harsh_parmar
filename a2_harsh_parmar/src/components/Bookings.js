@@ -1,5 +1,6 @@
 import React from 'react';
 import Booking from './Booking';
+import './Bookings.css';
 
 export default class Bookings extends React.Component {
 
@@ -34,7 +35,7 @@ export default class Bookings extends React.Component {
 
 	render(){
 		return (
-			<div className="App">
+			<div className="container">
 			{this.renderSuggestions()}
       		</div>
      	);
