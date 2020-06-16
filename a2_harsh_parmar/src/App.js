@@ -16,7 +16,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <div>
-          <Header isUserLoggedIn="false" />
+          <Header isUserLoggedIn="true" />
           <Route exact path="/" component={Home}/>
           <Route exact path="/profile" component={Profile}/>
           <Route exact path="/bookings" component={Bookings}/>

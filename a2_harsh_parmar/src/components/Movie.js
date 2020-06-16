@@ -1,8 +1,7 @@
 import React from 'react';
-import {Row, Col, Button} from 'react-bootstrap';
+import { Container, Row, Col, Button, Image} from 'react-bootstrap';
 import Axios from 'axios';
 import ReactPlayer from 'react-player';
-import './movie.css';
 
 export default class Movie extends React.Component {
 
@@ -24,33 +23,32 @@ export default class Movie extends React.Component {
   render(){
       
     return (
-        <div className="container">
+        <Container>
             <Row>
                 <Col>
-                    <Row>
-                    <img src={`https://image.tmdb.org/t/p/w500/${this.state.movieData.poster_path}`} alt="movie poster"/>
+                    <Row xs={5} md={2}>
+                        <Image src={`https://image.tmdb.org/t/p/w500/${this.state.movieData.poster_path}`} thumbnail />
                     </Row>
-                    <Row>
+                    <Row xs={5} md={2}>
                         <label>Movie: {this.state.movieData.title}</label>
                     </Row>
-                    <Row>
+                    <Row xs={5} md={2}>
                     <label>Language: Lorem Ipsum</label>
                     </Row>
-                    <Row>
+                    <Row xs={5} md={2}>
                         <label>Ratings: {this.state.movieData.vote_average}</label>
                     </Row>
-                    <Row>
+                    <Row xs={5} md={2}>
                         <label>Genre: Lorem Ipsum</label>
                     </Row>
-                    <Row>
+                    <Row xs={5} md={2}>
                         <label>Duration: {this.state.movieData.runtime} min</label>
                     </Row>
-                    <Row>
+                    <Row xs={5} md={1}>
                         <label>Release Date: {this.state.movieData.release_date}</label>
                     </Row>
-                    <Row>
+                    <Row xs={5} md={2}>
                     <Button 
-							className="filter-button"
 								variant='primary'
 								onClick={()=> this.setState({filterShow:true})}
 								>
@@ -58,9 +56,8 @@ export default class Movie extends React.Component {
 								</Button>
                     </Row>
                     <br/>
-                    <Row>
+                    <Row xs={5} md={2}>
                     <Button 
-							className="filter-button"
 								variant='primary'
 								onClick={()=> this.setState({filterShow:true})}
 								>
@@ -68,7 +65,7 @@ export default class Movie extends React.Component {
 								</Button>
                     </Row>
                 </Col>
-                <Col>
+                <Col >
                     <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
                 </Col>
             </Row>
@@ -84,7 +81,7 @@ export default class Movie extends React.Component {
                     <Row><h6>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac.</h6></Row>
                 </Col>
             </Row>
-        </div>
+        </Container>
         );
     }
     
