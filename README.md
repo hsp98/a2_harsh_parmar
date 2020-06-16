@@ -1,5 +1,4 @@
-# a2_harsh_parmar
-
+#a2_harsh_parmar
 #Assignment 2
 
 Description: This project contains the user interface of the website MovieTime. No backend is implemented as per requirements of assignment 2. However, necessary validations are used. This gives the website a better feel.
@@ -42,28 +41,29 @@ Step 1: Download Node.js from https://nodejs.org/en/ and install the downloaded 
 Step 2: Create a github account on https://github.com.
 Step 3: Open the downloaded local copy of assignment in Visual Studio Code and open its terminal.
 Step 4: run the following commands:
-	"npm install express"
-	"npm install create-react-app"
-	"npm install react-bootstrap
-	"npm install google-maps-react"
-	"npm install axios"
-	"npm install path"
-	"npm install react"
-	"npm install react-datepicker"
-	"npm install react-dom"
-	"npm install react-router-dom"
-	"npm install react-scripts"
-	"npm install react-slick"
-	"npm install slick-carousel"
-	"npm install styled-components"
+"npm install express"
+"npm install create-react-app"
+"npm install react-bootstrap
+"npm install google-maps-react"
+"npm install axios"
+"npm install path"
+"npm install react"
+"npm install react-datepicker"
+"npm install react-dom"
+"npm install react-router-dom"
+"npm install react-scripts"
+"npm install react-slick"
+"npm install slick-carousel"
+"npm install styled-components"
+"npm install react-player"
 
 Step 5: After successful installation, run the following command to start the application:
-	"npm start"
+"npm start"
 Step 6: Open web browser and go to http://localhost:5000/. Here, you will be able to view the application.
 
 URL of deployed application along with its functions:
 
-https://a2harshparmar.herokuapp.com: This is the landing page of the website. Landing page shows different tabs and  a list of up coming and now playing movies. I have used an api to get temporary data for website. I have used an API provided by https://www.themoviedb.org/ to fetch data to display on the landing page as well as on other pages as per requirement. On clicking filter button, a popup will appear with options like Language, Sort By, Genre and 2D/3D/4DX, etc. Date picker will let user select a date to find shows for that date.
+https://a2harshparmar.herokuapp.com: This is the landing page of the website. Landing page shows different tabs and a list of up coming and now playing movies. I have used an api to get temporary data for website. I have used an API provided by https://www.themoviedb.org/ to fetch data to display on the landing page as well as on other pages as per requirement. On clicking filter button, a popup will appear with options like Language, Sort By, Genre and 2D/3D/4DX, etc. Date picker will let user select a date to find shows for that date.
 
 https://a2harshparmar.herokuapp.com/profile: This page is the login page. If no email address and password is provided and clicked on login, an error message is displayed.
 If an invalid email address or password is provided then an error will be displayed. Here invalid means that email address is not a valid email address or password is shorter then 8 characters.
@@ -73,11 +73,28 @@ https://a2harshparmar.herokuapp.com/forgotpassword: You will reach to this page 
 
 https://a2harshparmar.herokuapp.com/bookings: This page shows the list of ticket bookings a user has made. Each booking has the movie poster, booking details and map showing the location of theatre.
 
+https://a2harshparmar.herokuapp.com/movie/{some movie id}: This page shows the movie details of the selected movie from landing page. This page currently contains a random video from youtube and shows the details of the movie selected from landing page. Movie details are fetched from the https://www.themoviedb.org/.
+
 ##Running the tests
 There are no automated test for this system.
 
 ##Deployment
-The application was deployed on heroku using a nodejs app. The application is live on https://a2harshparmar.herokuapp.com/.
+The application was deployed on heroku using a nodejs app. The application is live on
+
+https://a2harshparmar.herokuapp.com/.
+
+GitHub repository link: https://github.com/hsp98/a2_harsh_parmar
+
+GitLab repository link: https://git.cs.dal.ca/hparmar/a2_harsh_parmar
+
+Deployment process:
+Step 1: Create a Heroku account.
+Step 2: Create a GitHub account.
+Step 3: Create a github repository and push this project to github.
+Step 4: Create a new app on Heroku and connect it to github account.
+Step 5: Search your github repository and connect it to Heroku app.
+Step 6: On successful connection, click on deploy branch in manual deployment section.
+Step 7: On successful deployment click on view button to view the deployed app.
 
 ##Built With
 Nodejs - https://nodejs.org/en/ - The open source server environment.
@@ -87,22 +104,4 @@ HTML5 - https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5 - For desi
 
 References:
 
-[1] "Node.js", Node.js. [Online]. Available: https://nodejs.org/en/. [Accessed: 13- Jun- 2020]
-[2] "React – A JavaScript library for building user interfaces", Reactjs.org. [Online]. Available: https://reactjs.org/. [Accessed: 13- Jun- 2020]
-[3] React-bootstrap.github.io. [Online]. Available: https://react-bootstrap.github.io/. [Accessed: 13- Jun- 2020]
-[4] "Cloud Application Platform | Heroku", Heroku.com. [Online]. Available: https://www.heroku.com/. [Accessed: 13- Jun- 2020]
-[5] "express", npm. [Online]. Available: https://www.npmjs.com/package/express. [Accessed: 13- Jun- 2020]
-[6] "Create a New React App – React", Reactjs.org. [Online]. Available: https://reactjs.org/docs/create-a-new-react-app.html. [Accessed: 13- Jun- 2020]
-[7] "google-maps-react", npm. [Online]. Available: https://www.npmjs.com/package/google-maps-react. [Accessed: 13- Jun- 2020]
-[8] "axios", npm. [Online]. Available: https://www.npmjs.com/package/axios. [Accessed: 13- Jun- 2020]
-[9] "path", npm. [Online]. Available: https://www.npmjs.com/package/path. [Accessed: 13- Jun- 2020]
-[10] "react-datepicker", npm. [Online]. Available: https://www.npmjs.com/package/react-datepicker. [Accessed: 13- Jun- 2020]
-[11] "react-router-dom", npm. [Online]. Available: https://www.npmjs.com/package/react-router-dom. [Accessed: 13- Jun- 2020]
-[12] "react-scripts", npm. [Online]. Available: https://www.npmjs.com/package/react-scripts. [Accessed: 13- Jun- 2020]
-[13] "react-slick", npm. [Online]. Available: https://www.npmjs.com/package/react-slick. [Accessed: 13- Jun- 2020]
-[14] "slick-carousel", npm. [Online]. Available: https://www.npmjs.com/package/slick-carousel. [Accessed: 13- Jun- 2020]
-[15] "styled-components", npm. [Online]. Available: https://www.npmjs.com/package/styled-components. [Accessed: 13- Jun- 2020]
-[16] "The Movie Database (TMDb)", Themoviedb.org. [Online]. Available: https://www.themoviedb.org/. [Accessed: 13- Jun- 2020]
-[17] V. Code, "Visual Studio Code - Code Editing. Redefined", Code.visualstudio.com. [Online]. Available: https://code.visualstudio.com/. [Accessed: 13- Jun- 2020]
-[18] "Google Maps Platform  |  Google Developers", Google Developers. [Online]. Available: https://developers.google.com/maps/documentation. [Accessed: 13- Jun- 2020]
-[19] "HTML5", MDN Web Docs. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5. [Accessed: 13- Jun- 2020]
+[1] "Node.js", Node.js. [Online]. Available: https://nodejs.org/en/. [Accessed: 13- Jun- 2020][2] "React – A JavaScript library for building user interfaces", Reactjs.org. [Online]. Available: https://reactjs.org/. [Accessed: 13- Jun- 2020][3] React-bootstrap.github.io. [Online]. Available: https://react-bootstrap.github.io/. [Accessed: 13- Jun- 2020][4] "Cloud Application Platform | Heroku", Heroku.com. [Online]. Available: https://www.heroku.com/. [Accessed: 13- Jun- 2020][5] "express", npm. [Online]. Available: https://www.npmjs.com/package/express. [Accessed: 13- Jun- 2020][6] "Create a New React App – React", Reactjs.org. [Online]. Available: https://reactjs.org/docs/create-a-new-react-app.html. [Accessed: 13- Jun- 2020][7] "google-maps-react", npm. [Online]. Available: https://www.npmjs.com/package/google-maps-react. [Accessed: 13- Jun- 2020][8] "axios", npm. [Online]. Available: https://www.npmjs.com/package/axios. [Accessed: 13- Jun- 2020][9] "path", npm. [Online]. Available: https://www.npmjs.com/package/path. [Accessed: 13- Jun- 2020][10] "react-datepicker", npm. [Online]. Available: https://www.npmjs.com/package/react-datepicker. [Accessed: 13- Jun- 2020][11] "react-router-dom", npm. [Online]. Available: https://www.npmjs.com/package/react-router-dom. [Accessed: 13- Jun- 2020][12] "react-scripts", npm. [Online]. Available: https://www.npmjs.com/package/react-scripts. [Accessed: 13- Jun- 2020][13] "react-slick", npm. [Online]. Available: https://www.npmjs.com/package/react-slick. [Accessed: 13- Jun- 2020][14] "slick-carousel", npm. [Online]. Available: https://www.npmjs.com/package/slick-carousel. [Accessed: 13- Jun- 2020][15] "styled-components", npm. [Online]. Available: https://www.npmjs.com/package/styled-components. [Accessed: 13- Jun- 2020][16] "The Movie Database (TMDb)", Themoviedb.org. [Online]. Available: https://www.themoviedb.org/. [Accessed: 13- Jun- 2020][17] V. Code, "Visual Studio Code - Code Editing. Redefined", Code.visualstudio.com. [Online]. Available: https://code.visualstudio.com/. [Accessed: 13- Jun- 2020][18] "Google Maps Platform | Google Developers", Google Developers. [Online]. Available: https://developers.google.com/maps/documentation. [Accessed: 13- Jun- 2020][19] "HTML5", MDN Web Docs. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5. [Accessed: 13- Jun- 2020][20] "react-player", npm. [Online]. Available: https://www.npmjs.com/package/react-player. [Accessed: 13- Jun- 2020]
